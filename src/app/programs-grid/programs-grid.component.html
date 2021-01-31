@@ -1,0 +1,36 @@
+<div class="right-block">
+    <div *ngFor="let launch of launchData" class="launch-card">
+      <div class="card-padding">
+        <div class="img-wrap">
+          <img
+            src="{{ launch.links.mission_patch_small }}"
+            alt="Avatar"
+            class="image"
+          />
+        </div>
+
+        <h5 class='mission-name-text'>
+         <strong> {{ launch.mission_name }} # {{ launch.flight_number }}</strong> 
+        </h5>
+        <h5>
+           Mission Ids: <span class='mission-name-text'>{{ launch.mission_id }}</span>
+        </h5>
+        <h5>
+          Launch Year:
+          <span class='mission-name-text'>{{ launch.launch_year }}</span>
+        </h5>
+        <h5>
+          Successful Launch:
+          <span class='mission-name-text'>{{ launch.launch_success }}</span>
+        </h5>
+        <h5>
+          Successful Landing:<span class='mission-name-text'>{{
+            launch.rocket.first_stage.cores[0].land_success
+          }}</span>
+        </h5>
+      </div>
+    </div>
+    <h2 *ngIf="launchCount == 0" style="margin-left: 40%">
+      No Record Found!
+    </h2>
+  </div>

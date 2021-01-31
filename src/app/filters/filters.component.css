@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+  width: 19.5%;
+  height: 600px;
+}
+
+.card:hover {
+  box-shadow: 0 9px 15px 0 rgba(0, 0, 0, 0.2);
+}
+.left-block {
+  width: 20%;
+  background-color: white;
+  height: fit-content;
+  padding-bottom: 5%;
+}
+
+.left-container-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.success-launch-text {
+    text-align: center !important;
+     margin: 0; 
+     margin-top: 35px
+}
+
+.background-set {
+  background-color: lightgreen;
+  border-radius: 4px;
+  padding: 10px;
+  padding: 10px 25px;
+  margin: 5px;
+}
+.active, .background-set:hover {
+  background-color:  #228B22;
+}
+.background-set:focus {
+  background-color: green !important;
+}
+
+.horizontal-line {
+  width: 70%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.filter {
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.button {
+  text-align: center;
+}
+.launch-text {
+  text-align: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: block;
+  }
+  .set-card-width {
+      width: 100% !important;
+  }
+  .left-block {
+    width: 100% !important;
+    margin: 0;
+  }
+  .launch-year {
+    width: 50%;
+  }
+  .year-btn {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .left-block {
+    width: 80% !important;
+    margin: 0;
+  }
+  .launch-year {
+    width: 50%;
+  }
+  .year-btn {
+    text-align: center;
+  }
+  .filter {
+    padding-left: 15px;
+    padding-top: 0px !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .left-block {
+    width: 20% !important;
+    margin: 0;
+  }
+  .launch-year {
+    width: 50%;
+  }
+  .year-btn {
+    text-align: center;
+  }
+  .filter {
+    padding-left: 15px;
+    padding-top: 0px !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1440px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .left-block {
+    width: 20% !important;
+    margin: 0;
+  }
+  .launch-year {
+    width: 50%;
+  }
+  .year-btn {
+    text-align: center;
+  }
+  .filter {
+    padding-left: 15px;
+    padding-top: 0px !important;
+  }
+
+}
+.set-card-width {
+    width:calc(100% - 20%);
+  }

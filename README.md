@@ -1,18 +1,31 @@
 # SpaceX
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
+### ps-xt-coding-assignment
+This is a front-end application which would help users list and browse all launches by SpaceX program using below APIs.<br/>
 
-## Development server
+### APIs
+Initial API: https://api.spaceXdata.com/v3/launches?limit=100<br/>
+Launch Success Filter: https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true<br/>
+Launch and Land Success Filter: https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true&land_success=true<br/>
+All at once: https://api.spaceXdata.com/v3/launches?limit=100&launch_success=true&land_success=true&launch_year=2014<br/>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Tech Stack
+<ol>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>TypeScript (ES6+)</li>
+<li>Angular</li>
+<li>Karme, Jasmine Testing Tools</li>  
+</ol>
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Features
+<ol>
+<li>Responsive Behaviour (Mobile First)</li>
+<li>Filters</li>
+<li>Scalable Code Structure</li>
+<li>Unit Test Cases</li>
+<li>Lighthouse Best Practices</li>
+</ol>
 
 ## Running unit tests
 
@@ -22,6 +35,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -1,0 +1,94 @@
+.launch-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 24%;
+  background-color: white;
+  height: fit-content;
+}
+.card-padding {
+  padding: 10px;
+}
+.mission-name-text {
+  color: #551a8b;
+}
+.image {
+  height: 150px;
+  width: 150px;
+}
+.right-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 700px) {
+  .right-block {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .right-block > div {
+    margin-top: 10px;
+  }
+
+  .launch-card {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .right-block {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .right-block > div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .launch-card {
+    width: 49%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .right-block {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .right-block > div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .launch-card {
+    width: 24%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .right-block {
+    display: flex !important;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .right-block > div {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .launch-card {
+    width: 24%;
+    margin-left: 1%;
+  }
+}

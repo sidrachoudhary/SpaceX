@@ -1,0 +1,57 @@
+<div class="container"> 
+<h2 style="width: 100%;"><strong>SpaceX Launch Programs</strong></h2>
+  <div class="card left-block">
+    <h4 class="filter">Filters</h4>
+    <p class="launch-text"><b>Launch Year</b></p>
+    <hr class="horizontal-line" />
+    <div class="left-container-flex">
+      <div
+        *ngFor="let year of launchYearRequested; let i = index"
+        class="launch-year"
+      >
+        <div (click)="applyYearFilter(year)" class="year-btn">
+          <button class="background-set">
+            {{ year }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <p class="success-launch-text">
+      <b>Successful Launch</b>
+    </p>
+    <hr class="horizontal-line" />
+    <br />
+    <div class="button">
+      <button
+        class="background-set"
+        (click)="applyLaunchSuccessFilter($event)"
+        value="true"
+        >True</button
+      >
+      <button class="background-set" (click)="applyLaunchSuccessFilter($event)"
+        >False</button
+      >
+    </div>
+    <p class="success-launch-text">
+      <b>Successful Landing</b>
+    </p>
+    <hr class="horizontal-line" />
+    <br />
+    <div class="button">
+      <button class="background-set" (click)="applyMultipleFilter($event)"
+        >True</button
+      >
+      <button class="background-set" (click)="applyMultipleFilter($event)"
+        >False</button
+      >
+    </div>
+  </div>
+  <div class="set-card-width">
+    <app-programs-grid 
+        [launchCount]="launchCount"
+        [launchData]="launchData"
+    >
+    </app-programs-grid>
+  </div>
+</div>
